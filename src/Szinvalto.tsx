@@ -20,6 +20,7 @@ export default class Szinvalto extends Component<Props, State> {
 
     render(): ReactNode {
         let szoveg: string[] = [];
+        let a: string = 'A';
         for (let i = 0; i < this.props.count; i++) {
             szoveg.push(this.props.text);
         }
@@ -27,9 +28,9 @@ export default class Szinvalto extends Component<Props, State> {
       return <div>
         {
             szoveg.map(e => 
-            <p style={{color: this.state.color}}>{e}</p>)
+            <p style={{color: this.state.color}}> {a} {e} </p>)
         }
-            <button onClick={() => this.setState({ color: 'red'})}>Színváltás</button>
+            <button onClick={() => this.setState({ color: 'red'})}>Színváltás {a}</button>
         </div>
     }
 }

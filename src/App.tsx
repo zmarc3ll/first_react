@@ -8,7 +8,7 @@ function App() {
    <div className='App'>
       <Szinvalto 
       text="Ide jön a lorem ipsum szöveg"
-      count = 5
+      count = {5}
       />
    </div>
   );
